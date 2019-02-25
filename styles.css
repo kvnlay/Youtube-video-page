@@ -62,7 +62,7 @@ nav{
 }
 
 .sidebar{
-    background-color: black;
+    background-color: #f2f2f2;
     grid-area: sidebar;
 }
 
@@ -100,4 +100,12 @@ nav{
 
 .sub-btn{
     grid-area: subbtn;
+}
+
+#autoplay{
+    float: right;
+}
+
+.comments img {
+    float: left;
 }
