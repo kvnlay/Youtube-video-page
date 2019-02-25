@@ -3,6 +3,9 @@ body{
     padding: 0;
 }
 
+
+
+/* navbar styles */
 nav{
     position: fixed;
     top: 0;
@@ -12,17 +15,6 @@ nav{
     display: grid;
     grid-template-columns: 20% auto 20%;
     align-items: center;
-}
-
-.main{
-    display: grid;
-    grid-template-columns: 70% auto;
-    grid-template-rows: repeat(3, auto);
-    grid-template-areas:
-     "ytvideo sidebar"
-     "description sidebar"
-     "subscribe sidebar"
-     "comments sidebar";
 }
 
 .logo{
@@ -36,7 +28,21 @@ nav{
 
 .icons{
     background-color: aquamarine;
-    
+
+}
+
+/* main-section styles */
+
+.main{
+    display: grid;
+    grid-template-columns: 70% auto;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+     "ytvideo sidebar"
+     "description sidebar"
+     "subscribe sidebar"
+     "comments sidebar";
+    margin: 56px 0 0 0;
 }
 
 .yt-video{
@@ -47,6 +53,7 @@ nav{
 .description{
     background-color: beige;
     grid-area: description;
+    border-bottom: 1px solid black;
 }
 
 .comments{
@@ -62,4 +69,35 @@ nav{
 .subscribe{
     background-color: blanchedalmond;
     grid-area: subscribe;
+    display: grid;
+    grid-template-columns: 10% auto 20%;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: 
+    "subimg subdetails subbtn"
+    ". subdetails ."
+    ". subdetails .";
+}
+
+/* description styles */
+
+.desc-views{
+    display: inline-block;
+}
+
+.desc-right{
+    display: inline-block;
+    margin-left: 60%;
+}
+
+/* subscribe styles */
+.sub-details{
+    grid-area: subdetails;
+}
+
+.sub-img{
+    grid-area: subimg;
+}
+
+.sub-btn{
+    grid-area: subbtn;
 }
