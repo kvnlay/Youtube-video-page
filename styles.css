@@ -1,0 +1,46 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 56px;
+    display: grid;
+
+}
+
+.logo{
+    background-color: brown;
+}
+
+.search{
+    background-color: aqua;
+}
+
+.icons{
+    background-color: aquamarine;
+}
+
+.yt-video{
+    background-color: azure;
+}
+
+.description{
+    background-color: beige;
+}
+
+.comments{
+    background-color: bisque;
+}
+
+.sidebar{
+    background-color: black;
+}
+
+.subscribe{
+    background-color: blanchedalmond;
+}
