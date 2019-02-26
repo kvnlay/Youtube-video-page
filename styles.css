@@ -16,6 +16,7 @@ nav{
     grid-template-columns: 20% auto 20%;
     align-items: center;
     background-color: #ffffff;
+    z-index: 1;
 }
 
 .logo{
@@ -98,10 +99,13 @@ div.icons a{
 .comment_section{
     display: grid;
     grid-template-columns: 60px auto;
-    grid-template-areas: "img detail"
+    grid-template-areas: "img detail";
+    margin-bottom: 40px
 }
 .comment_img{
     grid-area: img;
+    float: left;
+    padding-right: 15px;
 }
 .comment_detail{
     grid-area: detail;
@@ -147,11 +151,7 @@ div.icons a{
 }
 
 /* description styles */
-/*
-.desc-views{
-    display: inline-block;
-    margin: 0 25px;
-}*/
+
 
 #views-txt{
     color: rgb(156, 156, 156);
@@ -181,8 +181,7 @@ div.desc-title h3{
 }
 
 .likes{
-    margin: 0 25px;
-    /* font-size: 12px; */
+    margin: 0 15px;
     font-weight: 550;
     color: rgb(156, 147, 147);
 }
@@ -231,4 +230,51 @@ div.desc-views h4{
 }
 #autoplay{
     float: right;
+}
+
+/* comment styles */
+#comment_meta{
+    margin-bottom: 20px;
+}
+
+#comment_meta span{
+    margin-right: 50px;
+}
+
+#comment_box{
+    font-size: 0.85em;
+    padding: 10px 0 ;
+    border-bottom: 1px #dadada solid;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    box-shadow: none;
+    width: 790px;
+}
+
+.comment_block{
+}
+
+.comment_content{
+    margin-left: 60px;
+    display: inline-block;
+    position: relative;
+    top: 40px;
+}
+
+.comment_date{
+    color: #808080;
+    font-size: 0.8em;
+    margin-left: 5px;
+}
+
+.comment_text{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.comment_like{
+    padding-left: 50px;
+    font-size: 14px;
+    padding-bottom: 30px;
 }
