@@ -12,13 +12,13 @@
     <header>
         <nav>
             <div class="logo">
-                <a href="#"><i class="fas fa-bars"></i></a>
+                <a href="#" id="logo-icon"><i class="fas fa-bars"></i></a>
                 <a href="#"><img class="yt_logo" alt="yt_logo" src="images/yt_icon.png"></a>
             </div>
             <div class="search">
-                <form action="">
-                    <input type="text" name="search" placeholder="search">
-                    <button type="submit">
+                <form action="" class="search">
+                    <input type="text" name="search" placeholder="search" id="search-bar">
+                    <button type="submit" id="search-btn">
                         <i class="fas fa-search"></i>
                     </button>
                 </form>
@@ -35,31 +35,35 @@
     </header>
     <section class="main">
         <div class="yt-video">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/xSe1YB3oOsA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="950" height="450px" src="https://www.youtube.com/embed/xSe1YB3oOsA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         <div class="description">
             <div class="desc-title">
-                <h1>BILLIONS | NEW SEASON</h1>
+                <h3>BILLIONS | NEW SEASON</h3>
             </div>
-            <div class="desc-views">
-                <p>277,517 views</p>
-            </div>
-            <div class="desc-right">
-                <span>
-                    <i class="fas fa-thumbs-up">2.6k</i>
-                </span>
-                <span>
-                    <i class="fas fa-thumbs-down">110</i>
-                </span>
-                <span>
-                    <i class="fas fa-share">Share</i>
-                </span>
-                <span>
-                    <i class="fas fa-folder-plus">Save</i>
-                </span>
-                <span>
-                    <i class="fa fa-ellipsis-h"></i> 
-                </span>
+            <div class="desc-down">
+                <h4 id="views-txt">277,517 views</h4>
+                <div class="desc-right">
+                    <span class="likes">
+                        <span class='icon thumbs'><i class="fas fa-thumbs-up"></i></span>
+                        2.3k
+                    </span>
+                    <span class="likes">
+                        <span class='icon thumbs'><i class="fas fa-thumbs-down"></i></span>
+                        110
+                    </span>
+                    <span class="likes">
+                        <span class='icon'><i class="fas fa-share"></i></span>
+                        Share
+                    </span>
+                    <span class="likes">
+                        <span class='icon'><i class="fas fa-folder-plus"></i></span>
+                        Save
+                    </span>
+                    <span>
+                        <i class="fa fa-ellipsis-h"></i> 
+                    </span>
+                </div>
             </div>
         </div>
         <div class="subscribe">

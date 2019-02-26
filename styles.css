@@ -15,20 +15,53 @@ nav{
     display: grid;
     grid-template-columns: 20% auto 20%;
     align-items: center;
+    background-color: #ffffff;
 }
 
 .logo{
-    background-color: brown;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
     
 }
 
-.search{
-    background-color: aqua;
+#logo-icon{
+    padding: 20px 5px 20px 20px;
+}
+
+form.search{
+    margin: 0 70px;
+}
+
+#search-bar{
+    width: 75%;
+    padding: 10px;
+}
+
+#search-btn{
+    width: 10%;
+    padding: 10px;
+    margin-left: -5px;
+    cursor: pointer;
 }
 
 .icons{
-    background-color: aquamarine;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
 
+
+div.icons a{
+    color: #606060;
+    font-size: 20px;
+}
+
+.yt_logo{
+    margin-left: 25px;
 }
 
 /* main-section styles */
@@ -46,28 +79,25 @@ nav{
 }
 
 .yt-video{
-    background-color: azure;
     grid-area: ytvideo;
+    margin: 10px auto;
 }
 
 .description{
-    background-color: beige;
     grid-area: description;
-    border-bottom: 1px solid black;
+    position: relative;
+    top: -100px;
 }
 
 .comments{
-    background-color: bisque;
     grid-area: comments;
 }
 
 .sidebar{
-    background-color: #f2f2f2;
     grid-area: sidebar;
 }
 
 .subscribe{
-    background-color: blanchedalmond;
     grid-area: subscribe;
     display: grid;
     grid-template-columns: 10% auto 20%;
@@ -79,14 +109,54 @@ nav{
 }
 
 /* description styles */
-
+/*
 .desc-views{
     display: inline-block;
+    margin: 0 25px;
+}*/
+
+#views-txt{
+    color: rgb(156, 156, 156);
+    font-weight: 300;
+}
+
+.desc-down{
+    margin: 0 25px;
+    border-bottom: 1px solid #eeeeee;
 }
 
 .desc-right{
-    display: inline-block;
-    margin-left: 60%;
+    float: right;
+    margin-top: -34px;
+    margin-right: 13px;;
+}
+
+.desc-title{
+    margin: 0 25px;
+}
+
+div.desc-title h3{
+    font-size: 1.1em;
+    /*margin-bottom: -9px;*/
+    letter-spacing: 0.28px;
+    font-weight: 400;
+}
+
+.likes{
+    margin: 0 25px;
+    /* font-size: 12px; */
+    font-weight: 550;
+    color: rgb(156, 147, 147);
+}
+
+.icons{
+    margin: 5px;
+}
+
+
+div.desc-views h4{
+    color: rgb(156, 156, 156);
+    font-weight: 300;
 }
 
 /* subscribe styles */
