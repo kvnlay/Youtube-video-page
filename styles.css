@@ -1,6 +1,8 @@
 body{
     margin: 0;
     padding: 0;
+    font: 14px/16px Arial, Helvetica, sans-serif;
+    color:  #272727;
 }
 
 
@@ -17,6 +19,17 @@ nav{
     align-items: center;
     background-color: #ffffff;
     z-index: 1;
+}
+h3{
+    font-size: 1em;
+}
+h4{
+    font-size: 0.9em; 
+}
+a{
+    color: #808080;
+    text-decoration: none;
+    font-size: 12px;
 }
 
 .logo{
@@ -84,6 +97,10 @@ div.icons a{
     grid-area: ytvideo;
     margin: 10px auto;
 }
+.yt-video iframe{
+    width: 61.2vw; 
+    height: 60vh;
+}
 
 .description{
     grid-area: description;
@@ -135,6 +152,9 @@ div.icons a{
 .sidebar_description h4, p{
     margin: 0;
     padding: 0;
+}
+.sidebar_description p{
+    color: #808080;
 }
 
 .subscribe{
