@@ -75,7 +75,8 @@ div.icons a{
      "description sidebar"
      "subscribe sidebar"
      "comments sidebar";
-    margin: 56px 0 0 0;
+    width: 94%;
+    margin: 60px auto;
 }
 
 .yt-video{
@@ -86,26 +87,63 @@ div.icons a{
 .description{
     grid-area: description;
     position: relative;
-    top: -100px;
+    /*top: -100px;*/
+    margin: 0 0 30px 0;
 }
 
 .comments{
     grid-area: comments;
+    margin: 0 30px;
+}
+.comment_section{
+    display: grid;
+    grid-template-columns: 60px auto;
+    grid-template-areas: "img detail"
+}
+.comment_img{
+    grid-area: img;
+}
+.comment_detail{
+    grid-area: detail;
 }
 
+/*  sidebar */
 .sidebar{
     grid-area: sidebar;
+}
+#sidebar_tabs{
+    margin: 0 0 20px 0;
+}
+.sidebar li{
+    list-style: none;
+    display: grid;
+    grid-template-columns: 180px auto;
+    grid-template-areas: 
+    "img description";
+    margin: 0 0 10px 0;
+}
+.sidebar_img{
+    grid-area: img;
+}
+.sidebar_description{
+    grid-area: description;
+}
+.sidebar_description h4, p{
+    margin: 0;
+    padding: 0;
 }
 
 .subscribe{
     grid-area: subscribe;
     display: grid;
-    grid-template-columns: 10% auto 20%;
+    grid-template-columns: 8% auto 20%;
     grid-template-rows: repeat(3, auto);
     grid-template-areas: 
     "subimg subdetails subbtn"
     ". subdetails ."
     ". subdetails .";
+    border-bottom: 1px solid #eeeeee;
+    margin: 0 20px 20px 30px;
 }
 
 /* description styles */
@@ -166,16 +204,31 @@ div.desc-views h4{
 
 .sub-img{
     grid-area: subimg;
+    margin: 0 auto;
+}
+.sub-img img{
+    border-radius: 50%;
 }
 
 .sub-btn{
     grid-area: subbtn;
 }
-
+.sub-btn button{
+    border-style: none;
+    background: #ff0000;
+    border-radius: 2px;
+    color: var(--yt-subscribe-button-text-color);
+    padding: 10px 16px;
+    margin: auto var(--ytd-subscribe-button-margin, 4px);
+    white-space: nowrap;
+    font-size: 1em;
+    text-transform: uppercase;
+    display: flex;
+    -ms-flex-direction: row;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    color: #ffffff;
+}
 #autoplay{
     float: right;
-}
-
-.comments img {
-    float: left;
 }
