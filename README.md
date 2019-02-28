@@ -5,5 +5,5 @@ A replica of the youtube video page
 https://raw.githack.com/kvnlay/Youtube-video-page/development/
 
 ## A project by:
--Musa Jabbaaru Ntege
+-Musa Jabbaaru Ntege <br>
 -Kingsley Omotayo
