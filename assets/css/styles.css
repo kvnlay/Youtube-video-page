@@ -100,6 +100,7 @@ div.icons a{
 .yt-video iframe{
     width: 61.2vw; 
     height: 60vh;
+    border: none;
 }
 
 .description{
@@ -270,9 +271,6 @@ div.desc-views h4{
     border-right: none;
     box-shadow: none;
     width: 790px;
-}
-
-.comment_block{
 }
 
 .comment_content{

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <title>Document</title>
 </head>
@@ -13,10 +13,10 @@
         <nav>
             <div class="logo">
                 <a href="#" id="logo-icon"><i class="fas fa-bars"></i></a>
-                <a href="#"><img class="yt_logo" alt="yt_logo" src="images/yt_icon.png"></a>
+                <a href="#"><img class="yt_logo" alt="yt_logo" src="assets/images/yt_icon.png"></a>
             </div>
             <div class="search">
-                <form action="" class="search">
+                <form action="#" class="search">
                     <input type="text" name="search" placeholder="search" id="search-bar">
                     <button type="submit" id="search-btn">
                         <i class="fas fa-search"></i>
@@ -35,7 +35,7 @@
     </header>
     <section class="main">
         <div class="yt-video">
-                <iframe src="https://www.youtube.com/embed/xSe1YB3oOsA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/xSe1YB3oOsA" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         <div class="description">
             <div class="desc-title">
@@ -68,7 +68,7 @@
         </div>
         <div class="subscribe">
             <div class="sub-img">
-                <img src="images/unnamed.jpg">
+                <img src="assets/images/unnamed.jpg" alt="avatar">
             </div>
             <div class="sub-details">
                 <h3>Billions on SHOWTIME</h3>
@@ -86,15 +86,15 @@
                 <span><i class="fas fa-sort-amount-down"></i> SORT BY</span>
             </div>
             <div class="comment_section">
-                <img class="comment_img" src="images/H.png">
-                <span class="comment_detail">
-                    <form action="" class="comment_form">
+                <img class="comment_img" src="assets/images/H.png" alt="avatar">
+                <div class="comment_detail">
+                    <form action="#" class="comment_form">
                         <input type="text" name="comment" id="comment_box" placeholder="Add a public comment...">
                     </form> 
-                </span>
+                </div>
             </div>
             <div class="comment_block">
-                <img class="comment_img" src="images/H.png">
+                <img class="comment_img" src="assets/images/H.png" alt="avatar">
                 <span>Joseph N </span>
                 <span class="comment_date"> 1 week ago(edited)</span>
                 <p class="comment_text">This was awesome!</p>
@@ -105,7 +105,7 @@
                 </div>
             </div>
             <div class="comment_block">
-                <img class="comment_img" src="images/H.png">
+                <img class="comment_img" src="assets/images/H.png" alt="avatar">
                 <span>Joseph N </span>
                 <span class="comment_date"> 1 week ago(edited)</span>
                 <p class="comment_text">This was awesome!</p>
@@ -116,7 +116,7 @@
                 </div>
             </div>
             <div class="comment_block">
-                <img class="comment_img" src="images/H.png">
+                <img class="comment_img" src="assets/images/H.png" alt="avatar">
                 <span>Joseph N </span>
                 <span class="comment_date"> 1 week ago(edited)</span>
                 <p class="comment_text">This was awesome!</p>
@@ -133,55 +133,57 @@
                 <span>Up Next</span>
                 <span id="autoplay">AutoPlay <i class="fas fa-toggle-on"></i></span>
             </div>
-            <li>
-                <img class="sidebar_img" src="images/Selection_001.png">
-                <span class="sidebar_description">
-                    <h4>10 - Funniest Incidents in Cricket</h4>
-                    <p>Top trending</p>
-                    <p>1.5M views</p>
-                </span>
-            </li>
-            <li>
-                <img class="sidebar_img" src="images/Selection_002.png">
-                <span class="sidebar_description">
-                    <h4>Top 10 Songs Of The Week - February 23, 2019 (Billboard Hot... </h4>
-                    <p>Ximo Pierto</p>
-                    <p>345k views</p>
-                </span>
-            </li>
-
-            <li>
-                <img class="sidebar_img" src="images/Selection_003.png">
-                <span class="sidebar_description">
-                    <h4>ALL SUPERHERO MOVIES 2019 (Trailers)</h4>
-                    <p>Ximo Pierto</p>
-                    <p>1.7M views</p>
-                </span>
-            </li>
-            <li>
-                <img class="sidebar_img" src="images/Selection_004.png">
-                <span class="sidebar_description">
-                    <h4>15 Times Famous Actors Were Rejected By Other Celebrities</h4>
-                    <p>Ximo Pierto</p>
-                    <p>783k views</p>
-                </span>
-            </li>
-            <li>
-                <img class="sidebar_img" src="images/Selection_005.png">
-                <span class="sidebar_description">
-                    <h4>Orlando Magic vs Toronto</h4>
-                    <p>Ximo Pierto</p>
-                    <p>1.5M views</p>
-                </span>
-            </li>
-            <li>
-                <img class="sidebar_img" src="images/Selection_006.png">
-                <span class="sidebar_description">
-                    <h4>Try Not To Sing Challenge Level 7 (1997-2017) Hits Through Th...</h4>
-                    <p>Ximo Pierto</p>
-                    <p>3.5M views</p>
-                </span>
-            </li>
+            <ul>
+                <li>
+                    <img class="sidebar_img" src="assets/images/Selection_001.png" alt="suggestions">
+                    <div class="sidebar_description">
+                        <h4>10 - Funniest Incidents in Cricket</h4>
+                        <p>Top trending</p>
+                        <p>1.5M views</p>
+                    </div>
+                </li>
+                <li>
+                    <img class="sidebar_img" src="assets/images/Selection_002.png" alt="suggestions">
+                    <div class="sidebar_description">
+                        <h4>Top 10 Songs Of The Week - February 23, 2019 (Billboard Hot... </h4>
+                        <p>Ximo Pierto</p>
+                        <p>345k views</p>
+                    </div>
+                </li>
+    
+                <li>
+                    <img class="sidebar_img" src="assets/images/Selection_003.png" alt="suggestions">
+                    <div class="sidebar_description">
+                        <h4>ALL SUPERHERO MOVIES 2019 (Trailers)</h4>
+                        <p>Ximo Pierto</p>
+                        <p>1.7M views</p>
+                    </div>
+                </li>
+                <li>
+                    <img class="sidebar_img" src="assets/images/Selection_004.png" alt="suggestions">
+                    <div class="sidebar_description">
+                        <h4>15 Times Famous Actors Were Rejected By Other Celebrities</h4>
+                        <p>Ximo Pierto</p>
+                        <p>783k views</p>
+                    </div>
+                </li>
+                <li>
+                    <img class="sidebar_img" src="assets/images/Selection_005.png" alt="suggestions">
+                    <div class="sidebar_description">
+                        <h4>Orlando Magic vs Toronto</h4>
+                        <p>Ximo Pierto</p>
+                        <p>1.5M views</p>
+                    </div>
+                </li>
+                <li>
+                    <img class="sidebar_img" src="assets/images/Selection_006.png" alt="suggestions">
+                    <div class="sidebar_description">
+                        <h4>Try Not To Sing Challenge Level 7 (1997-2017) Hits Through Th...</h4>
+                        <p>Ximo Pierto</p>
+                        <p>3.5M views</p>
+                    </div>
+                </li>
+            </ul>
         </div>
     </section>
 </body>
