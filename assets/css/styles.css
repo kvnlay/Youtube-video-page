@@ -12,7 +12,9 @@ body{
 .flex-display{
     display: flex;
 }
-
+.light{
+    color: rgb(140,140,140);
+}
 /* navbar styles */
 nav{
     position: fixed;
@@ -26,13 +28,14 @@ nav{
     z-index: 1;
 }
 h3{
-    font-size: 1em;
+    font-size: 1.1em;
+    letter-spacing: 0.28px;
+    font-weight: 400;
 }
 h4{
     font-size: 0.9em; 
 }
 a{
-    color: #808080;
     text-decoration: none;
     font-size: 12px;
 }
@@ -71,7 +74,6 @@ form.search{
 
 
 div.icons a{
-    color: #606060;
     font-size: 20px;
 }
 
@@ -151,9 +153,6 @@ div.icons a{
     margin: 0;
     padding: 0;
 }
-.sidebar_description p{
-    color: #808080;
-}
 
 .subscribe{
     grid-area: subscribe;
@@ -171,7 +170,6 @@ div.icons a{
 
 
 #views-txt{
-    color: rgb(156, 156, 156);
     font-weight: 300;
 }
 
@@ -191,15 +189,11 @@ div.icons a{
 }
 
 div.desc-title h3{
-    font-size: 1.1em;
-    letter-spacing: 0.28px;
-    font-weight: 400;
 }
 
 .likes{
     margin: 0 15px;
     font-weight: 550;
-    color: rgb(156, 147, 147);
 }
 
 .icons{
@@ -207,10 +201,10 @@ div.desc-title h3{
 }
 
 
-div.desc-views h4{
+/*div.desc-views h4{
     color: rgb(156, 156, 156);
     font-weight: 300;
-}
+}*/
 
 /* subscribe styles */
 
@@ -274,7 +268,6 @@ div.desc-views h4{
 }
 
 .comment_date{
-    color: #808080;
     font-size: 0.8em;
     margin-left: 5px;
 }
