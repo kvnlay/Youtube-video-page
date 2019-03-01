@@ -5,7 +5,13 @@ body{
     color:  #272727;
 }
 
+.grid-display{
+    display: grid;
+}
 
+.flex-display{
+    display: flex;
+}
 
 /* navbar styles */
 nav{
@@ -14,7 +20,6 @@ nav{
     left: 0;
     width: 100%;
     height: 56px;
-    display: grid;
     grid-template-columns: 20% auto 20%;
     align-items: center;
     background-color: #ffffff;
@@ -33,8 +38,6 @@ a{
 }
 
 .logo{
-    display: flex;
-    flex-direction: row;
     justify-content: flex-start;
     align-items: center;
     
@@ -61,8 +64,6 @@ form.search{
 }
 
 .icons{
-    display: flex;
-    flex-direction: row;
     height: 100%;
     justify-content: space-around;
     align-items: center;
@@ -81,7 +82,6 @@ div.icons a{
 /* main-section styles */
 
 .main{
-    display: grid;
     grid-template-columns: 70% auto;
     grid-template-rows: repeat(3, auto);
     grid-template-areas:
@@ -106,7 +106,6 @@ div.icons a{
 .description{
     grid-area: description;
     position: relative;
-    /*top: -100px;*/
     margin: 0 0 30px 0;
 }
 
@@ -115,7 +114,6 @@ div.icons a{
     margin: 0 30px;
 }
 .comment_section{
-    display: grid;
     grid-template-columns: 60px auto;
     grid-template-areas: "img detail";
     margin-bottom: 40px
@@ -138,7 +136,6 @@ div.icons a{
 }
 .sidebar li{
     list-style: none;
-    display: grid;
     grid-template-columns: 180px auto;
     grid-template-areas: 
     "img description";
@@ -160,7 +157,6 @@ div.icons a{
 
 .subscribe{
     grid-area: subscribe;
-    display: grid;
     grid-template-columns: 8% auto 20%;
     grid-template-rows: repeat(3, auto);
     grid-template-areas: 
@@ -196,7 +192,6 @@ div.icons a{
 
 div.desc-title h3{
     font-size: 1.1em;
-    /*margin-bottom: -9px;*/
     letter-spacing: 0.28px;
     font-weight: 400;
 }
@@ -218,6 +213,7 @@ div.desc-views h4{
 }
 
 /* subscribe styles */
+
 .sub-details{
     grid-area: subdetails;
 }
@@ -243,10 +239,6 @@ div.desc-views h4{
     white-space: nowrap;
     font-size: 1em;
     text-transform: uppercase;
-    display: flex;
-    -ms-flex-direction: row;
-    -webkit-flex-direction: row;
-    flex-direction: row;
     color: #ffffff;
 }
 #autoplay{
@@ -254,6 +246,7 @@ div.desc-views h4{
 }
 
 /* comment styles */
+
 #comment_meta{
     margin-bottom: 20px;
 }
