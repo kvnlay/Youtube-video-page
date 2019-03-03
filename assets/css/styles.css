@@ -1,0 +1,284 @@
+body{
+    margin: 0;
+    padding: 0;
+    font: 14px/16px Arial, Helvetica, sans-serif;
+    color:  #272727;
+}
+
+.grid-display{
+    display: grid;
+}
+
+.flex-display{
+    display: flex;
+}
+.light{
+    color: rgb(140,140,140);
+}
+/* navbar styles */
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 56px;
+    grid-template-columns: 20% auto 20%;
+    align-items: center;
+    background-color: #ffffff;
+    z-index: 1;
+}
+h3{
+    font-size: 1.1em;
+    letter-spacing: 0.28px;
+    font-weight: 400;
+}
+h4{
+    font-size: 0.9em; 
+}
+a{
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.logo{
+    justify-content: flex-start;
+    align-items: center;
+    
+}
+
+#logo-icon{
+    padding: 20px 5px 20px 20px;
+}
+
+form.search{
+    margin: 0 70px;
+}
+
+#search-bar{
+    width: 75%;
+    padding: 10px;
+}
+
+#search-btn{
+    width: 10%;
+    padding: 10px;
+    margin-left: -5px;
+    cursor: pointer;
+}
+
+.icons{
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+div.icons a{
+    font-size: 20px;
+}
+
+.yt_logo{
+    margin-left: 25px;
+}
+
+/* main-section styles */
+
+.main{
+    grid-template-columns: 70% auto;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+     "ytvideo sidebar"
+     "description sidebar"
+     "subscribe sidebar"
+     "comments sidebar";
+    width: 94%;
+    margin: 60px auto;
+}
+
+.yt-video{
+    grid-area: ytvideo;
+    margin: 10px auto;
+}
+.yt-video iframe{
+    width: 61.2vw; 
+    height: 60vh;
+    border: none;
+}
+
+.description{
+    grid-area: description;
+    position: relative;
+    margin: 0 0 30px 0;
+}
+
+.comments{
+    grid-area: comments;
+    margin: 0 30px;
+}
+.comment_section{
+    grid-template-columns: 60px auto;
+    grid-template-areas: "img detail";
+    margin-bottom: 40px
+}
+.comment_img{
+    grid-area: img;
+    float: left;
+    padding-right: 15px;
+}
+.comment_detail{
+    grid-area: detail;
+}
+
+/*  sidebar */
+.sidebar{
+    grid-area: sidebar;
+}
+#sidebar_tabs{
+    margin: 0 0 20px 0;
+}
+.sidebar li{
+    list-style: none;
+    grid-template-columns: 180px auto;
+    grid-template-areas: 
+    "img description";
+    margin: 0 0 10px 0;
+}
+.sidebar_img{
+    grid-area: img;
+}
+.sidebar_description{
+    grid-area: description;
+}
+.sidebar_description h4, p{
+    margin: 0;
+    padding: 0;
+}
+
+.subscribe{
+    grid-area: subscribe;
+    grid-template-columns: 8% auto 20%;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: 
+    "subimg subdetails subbtn"
+    ". subdetails ."
+    ". subdetails .";
+    border-bottom: 1px solid #eeeeee;
+    margin: 0 20px 20px 30px;
+}
+
+/* description styles */
+
+
+#views-txt{
+    font-weight: 300;
+}
+
+.desc-down{
+    margin: 0 25px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.desc-right{
+    float: right;
+    margin-top: -34px;
+    margin-right: 13px;;
+}
+
+.desc-title{
+    margin: 0 25px;
+}
+
+div.desc-title h3{
+}
+
+.likes{
+    margin: 0 15px;
+    font-weight: 550;
+}
+
+.icons{
+    margin: 5px;
+}
+
+
+/*div.desc-views h4{
+    color: rgb(156, 156, 156);
+    font-weight: 300;
+}*/
+
+/* subscribe styles */
+
+.sub-details{
+    grid-area: subdetails;
+}
+
+.sub-img{
+    grid-area: subimg;
+    margin: 0 auto;
+}
+.sub-img img{
+    border-radius: 50%;
+}
+
+.sub-btn{
+    grid-area: subbtn;
+}
+.sub-btn button{
+    border-style: none;
+    background: #ff0000;
+    border-radius: 2px;
+    color: var(--yt-subscribe-button-text-color);
+    padding: 10px 16px;
+    margin: auto var(--ytd-subscribe-button-margin, 4px);
+    white-space: nowrap;
+    font-size: 1em;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+#autoplay{
+    float: right;
+}
+
+/* comment styles */
+
+#comment_meta{
+    margin-bottom: 20px;
+}
+
+#comment_meta span{
+    margin-right: 50px;
+}
+
+#comment_box{
+    font-size: 0.85em;
+    padding: 10px 0 ;
+    border-bottom: 1px #dadada solid;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    box-shadow: none;
+    width: 790px;
+}
+
+.comment_content{
+    margin-left: 60px;
+    display: inline-block;
+    position: relative;
+    top: 40px;
+}
+
+.comment_date{
+    font-size: 0.8em;
+    margin-left: 5px;
+}
+
+.comment_text{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.comment_like{
+    padding-left: 50px;
+    font-size: 14px;
+    padding-bottom: 30px;
+}
